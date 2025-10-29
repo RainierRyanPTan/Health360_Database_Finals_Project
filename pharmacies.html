@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharmacies | Health360 Admin</title>
+  <link rel="stylesheet" href="pharmacies.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h2>Health360</h2>
+      <p>📍 Iloilo Site</p>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="logout">Logout</a>
+    </div>
+  </nav>
+
+  <div class="admin-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Health360</h2>
+        <p>Admin Panel</p>
+      </div>
+      <ul class="sidebar-menu">
+        <li><a href="admin.html">🏠 Dashboard</a></li>
+        <li><a href="manage_users.html">🧑‍⚕️ Manage Users</a></li>
+        <li class="active"><a href="pharmacies.html">🏥 Pharmacies</a></li>
+        <li><a href="medicine_stocks.html">💊 Medicine Stocks</a></li>
+        <li><a href="reports.html">📈 Reports</a></li>
+        <li><a href="settings.html">⚙️ Settings</a></li>
+      </ul>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="dashboard-main">
+      <header class="admin-header">
+        <h1>Pharmacies 🏥</h1>
+        <p>Manage and monitor all registered drugstores in the Health360 network.</p>
+      </header>
+
+      <!-- ACTIONS -->
+      <div class="controls">
+        <div class="control-row">
+          <button id="addPharmacyBtn" class="btn">➕ Add Pharmacy</button>
+          <select id="stockFilter">
+            <option value="all">All Pharmacies</option>
+            <option value="low">Low Stock</option>
+            <option value="normal">Normal Stock</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- PHARMACY TABLE -->
+      <section class="table-section">
+        <table id="pharmacyTable">
+          <thead>
+            <tr>
+              <th>Pharmacy Name</th>
+              <th>Address</th>
+              <th>Contact</th>
+              <th>Stock Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mercury Drug - Iloilo</td>
+              <td>General Luna St, Iloilo City</td>
+              <td>033-555-8899</td>
+              <td><span class="stock-status normal">Normal</span></td>
+              <td><button class="btn outline edit-btn">Edit</button> <button class="btn remove-btn">Remove</button></td>
+            </tr>
+            <tr class="low-stock">
+              <td>Watsons - City Mall</td>
+              <td>Diversion Rd, Mandurriao</td>
+              <td>033-445-2211</td>
+              <td><span class="stock-status low">Low Stock</span></td>
+              <td><button class="btn outline edit-btn">Edit</button> <button class="btn remove-btn">Remove</button></td>
+            </tr>
+            <tr>
+              <td>Rose Pharmacy</td>
+              <td>Jaro Plaza, Iloilo City</td>
+              <td>033-884-1765</td>
+              <td><span class="stock-status normal">Normal</span></td>
+              <td><button class="btn outline edit-btn">Edit</button> <button class="btn remove-btn">Remove</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 All Rights Reserved | Health360</p>
+  </footer>
+
+  <script src="pharmacies.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health360 | Medicine</title>
+  <link rel="stylesheet" href="medicine.css" />
+</head>
+<body>
+  <!-- ✅ HEADER -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h2>Health360</h2>
+      <p>📍 Iloilo Site</p>
+    </div>
+
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="notifications.html">Notifications</a>
+      <a href="medicine.html" class="active">Medicine</a>
+      <a href="cart.html">🛒 Cart</a>
+      <a href="index.html" class="logout">Logout</a>
+    </div>
+  </nav>
+
+  <!-- ✅ BODY -->
+  <section class="medicine-header">
+    <h1>💊 Medicine & Health Essentials</h1>
+    <p>Shop trusted medicines and healthcare products — delivered to your door.</p>
+  </section>
+
+  <!-- CATEGORY FILTER -->
+  <section class="categories">
+    <button class="category active" data-category="all">All</button>
+    <button class="category" data-category="general">General</button>
+    <button class="category" data-category="sanitizer">Sanitizers</button>
+    <button class="category" data-category="protein">Supplements</button>
+    <button class="category" data-category="homeSafe">Home Safety</button>
+  </section>
+
+  <!-- PRODUCT GRID -->
+  <section id="productList" class="product-list">
+    <!-- GENERAL MEDICINES -->
+    <div class="product-card general">
+      <img src="paracetamol.jfif" alt="Paracetamol">
+      <h3>Paracetamol</h3>
+      <p>₱25.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card general">
+      <img src="ibuprofen.jfif" alt="Ibuprofen">
+      <h3>Ibuprofen</h3>
+      <p>₱30.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card general">
+      <img src="vitc.jfif" alt="Vitamin C">
+      <h3>Vitamin C 1000mg</h3>
+      <p>₱45.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <!-- SANITIZERS -->
+    <div class="product-card sanitizer">
+      <img src="dettol.jfif" alt="Dettol Antiseptic">
+      <h3>Dettol Antiseptic</h3>
+      <p>₱75.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card sanitizer">
+      <img src="sanitizer.jfif" alt="Hand Sanitizer">
+      <h3>Hand Sanitizer</h3>
+      <p>₱60.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <!-- SUPPLEMENTS -->
+    <div class="product-card protein">
+      <img src="protein.jfif" alt="Protein Shake">
+      <h3>Protein Shake</h3>
+      <p>₱120.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card protein">
+      <img src="ensure.jfif" alt="Ensure Powder">
+      <h3>Ensure Powder</h3>
+      <p>₱92.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <!-- HOME SAFETY -->
+    <div class="product-card homeSafe">
+      <img src="fak.jfif" alt="First Aid Kit">
+      <h3>First Aid Kit</h3>
+      <p>₱150.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card homeSafe">
+      <img src="mask.jfif" alt="Face Mask">
+      <h3>Face Mask</h3>
+      <p>₱20.00</p>
+      <button>Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- ✅ FOOTER -->
+  <footer>
+    <p>© 2025 All Rights Reserved | Health360</p>
+  </footer>
+
+  <script src="medicine.js"></script>
+</body>
+</html>

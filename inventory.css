@@ -1,0 +1,158 @@
+/* ===== GENERAL STYLES ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f7f9fc;
+  margin: 0;
+  color: #333;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0077b6;
+  color: white;
+  padding: 12px 30px;
+}
+
+.nav-left h2 { margin: 0; }
+.nav-left p { margin: 0; font-size: 0.8em; }
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #caf0f8;
+}
+
+.logout {
+  background: #ff4b5c;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+/* ===== INVENTORY CONTAINER ===== */
+.inventory-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.inventory-container header h2 {
+  color: #0077b6;
+  margin-bottom: 5px;
+}
+
+.inventory-actions {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.inventory-actions input {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.inventory-actions button {
+  background: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.inventory-actions button:hover {
+  background: #0096c7;
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+thead {
+  background: #0077b6;
+  color: white;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px 10px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.low-stock td {
+  background: #fff5f5;
+  color: #b30000;
+}
+
+/* ===== BUTTONS ===== */
+.edit-btn {
+  background: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edit-btn:hover {
+  background: #0096c7;
+}
+
+.delete-btn {
+  background: #e63946;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background: #f15b5b;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  background: #023e8a;
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .inventory-actions {
+    flex-direction: column;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  .inventory-actions input {
+    width: 100%;
+  }
+}

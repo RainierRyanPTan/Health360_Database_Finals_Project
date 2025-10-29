@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pharmacy Inventory | Health360</title>
+  <link rel="stylesheet" href="inventory.css" />
+</head>
+<body>
+
+  <!-- ✅ HEADER -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h2>Health360</h2>
+      <p>📍 Iloilo Site</p>
+    </div>
+    <div class="nav-links">
+      <a href="pharmacy.html">🏠 Dashboard</a>
+      <a href="index.html" class="logout">Logout</a>
+    </div>
+  </nav>
+
+  <!-- ✅ INVENTORY CONTENT -->
+  <div class="inventory-container">
+    <header>
+      <h2>💊 Medicine Inventory</h2>
+      <p>View, search, and update stock levels of your medicines.</p>
+    </header>
+
+    <div class="inventory-actions">
+      <input type="text" id="searchInput" placeholder="🔍 Search medicine name..." />
+      <button id="addMedicineBtn">➕ Add New Medicine</button>
+    </div>
+
+    <table id="inventoryTable">
+      <thead>
+        <tr>
+          <th>Medicine Name</th>
+          <th>Category</th>
+          <th>Stock</th>
+          <th>Price</th>
+          <th>Expiration</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Paracetamol</td>
+          <td>Analgesic</td>
+          <td>120</td>
+          <td>₱12.00</td>
+          <td>2026-01-12</td>
+          <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+        </tr>
+        <tr>
+          <td>Amoxicillin</td>
+          <td>Antibiotic</td>
+          <td>85</td>
+          <td>₱25.00</td>
+          <td>2025-08-20</td>
+          <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+        </tr>
+        <tr class="low-stock">
+          <td>Vitamin C</td>
+          <td>Supplement</td>
+          <td>15</td>
+          <td>₱10.00</td>
+          <td>2025-02-05</td>
+          <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ✅ FOOTER -->
+  <footer>
+    <p>© 2025 All Rights Reserved | Health360</p>
+  </footer>
+
+  <script src="inventory.js"></script>
+</body>
+</html>

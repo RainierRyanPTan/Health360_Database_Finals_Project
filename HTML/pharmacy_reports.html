@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pharmacy Reports | Health360</title>
+  <link rel="stylesheet" href="pharmacy_reports.css" />
+</head>
+<body>
+
+  <!-- ✅ HEADER -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h2>Health360</h2>
+      <p>📍 Iloilo Site</p>
+    </div>
+    <div class="nav-links">
+      <a href="pharmacy.html">🏠 Dashboard</a>
+      <a href="index.html" class="logout">Logout</a>
+    </div>
+  </nav>
+
+  <!-- ✅ REPORTS SECTION -->
+  <div class="reports-container">
+    <header>
+      <h2>📈 Pharmacy Reports</h2>
+      <p>Generate and send reports to Admin about your stock, sales, and deliveries.</p>
+    </header>
+
+    <!-- Report Submission Form -->
+    <section class="report-form">
+      <h3>📝 Submit New Report</h3>
+      <form id="reportForm">
+        <label for="reportType">Report Type:</label>
+        <select id="reportType" required>
+          <option value="" disabled selected>Select report type</option>
+          <option value="Weekly">Weekly Report</option>
+          <option value="Monthly">Monthly Report</option>
+          <option value="Inventory">Inventory Summary</option>
+        </select>
+
+        <label for="reportDesc">Description:</label>
+        <textarea id="reportDesc" rows="4" placeholder="Write details about the report..." required></textarea>
+
+        <label for="fileUpload">Attach File (optional):</label>
+        <input type="file" id="fileUpload" accept=".pdf,.csv,.xlsx,.docx" />
+
+        <button type="submit" class="submit-btn">📤 Submit Report</button>
+      </form>
+    </section>
+
+    <!-- Past Reports Table -->
+    <section class="report-history">
+      <h3>📂 Submitted Reports</h3>
+      <table id="reportTable">
+        <thead>
+          <tr>
+            <th>Report ID</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Date Submitted</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#REP2025-01</td>
+            <td>Weekly</td>
+            <td>Low stock and restock summary for Oct 20–27</td>
+            <td>2025-10-27</td>
+            <td><span class="status sent">Sent</span></td>
+          </tr>
+          <tr>
+            <td>#REP2025-02</td>
+            <td>Monthly</td>
+            <td>September sales and inventory performance</td>
+            <td>2025-10-01</td>
+            <td><span class="status reviewed">Reviewed</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <!-- ✅ FOOTER -->
+  <footer>
+    <p>© 2025 All Rights Reserved / Health360</p>
+  </footer>
+
+  <script src="pharmacy_reports.js"></script>
+</body>
+</html>

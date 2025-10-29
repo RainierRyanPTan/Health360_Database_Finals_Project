@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Health360</title>
+  <link rel="stylesheet" href="admin.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- ✅ HEADER / NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h2>Health360</h2>
+      <p>📍 Iloilo Site</p>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="logout">Logout</a>
+    </div>
+  </nav>
+
+  <!-- ✅ MAIN ADMIN CONTAINER -->
+  <div class="admin-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Health360</h2>
+        <p>Admin Panel</p>
+      </div>
+      <ul class="sidebar-menu">
+        <li><a href="admin.html" class="active">🏠 Dashboard</a></li>
+        <li><a href="manage_users.html">🧑‍⚕️ Manage Users</a></li>
+        <li><a href="pharmacies.html">🏥 Pharmacies</a></li>
+        <li><a href="medicine_stocks.html">💊 Medicine Stocks</a></li>
+        <li><a href="reports.html">📈 Reports</a></li>
+        <li><a href="settings.html">⚙️ Settings</a></li>
+      </ul>
+    </aside>
+
+    <!-- MAIN DASHBOARD CONTENT -->
+    <main class="dashboard-main">
+      <header class="admin-header">
+        <h1>Welcome, Admin 👨‍💼</h1>
+        <p>Monitor your pharmacy network and healthcare activities efficiently.</p>
+      </header>
+
+      <!-- STAT CARDS -->
+      <section class="stats">
+        <div class="stat-card">
+          <h3>Total Users</h3>
+          <p class="stat-value">2,500</p>
+          <span class="stat-change up">↑ 5% from last week</span>
+        </div>
+        <div class="stat-card">
+          <h3>Total Pharmacies</h3>
+          <p class="stat-value">180</p>
+          <span class="stat-change up">↑ 3% growth</span>
+        </div>
+        <div class="stat-card">
+          <h3>Total Medicines</h3>
+          <p class="stat-value">5,320</p>
+          <span class="stat-change down">↓ 2% sold out</span>
+        </div>
+        <div class="stat-card">
+          <h3>Inventory Alerts</h3>
+          <p class="stat-value">27</p>
+          <span class="stat-change down">↓ Needs refill</span>
+        </div>
+      </section>
+
+      <!-- CHARTS -->
+      <section class="charts">
+        <div class="chart-card">
+          <h3>Medicine Sales Trend</h3>
+          <canvas id="salesChart"></canvas>
+        </div>
+
+        <div class="chart-card">
+          <h3>Top Used Medicines</h3>
+          <canvas id="medicineChart"></canvas>
+        </div>
+      </section>
+
+      <!-- TABLE OVERVIEW -->
+      <section class="table-section">
+        <h3>Recent Pharmacy Reports</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Pharmacy Name</th>
+              <th>Report Date</th>
+              <th>Status</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mercury Drug</td>
+              <td>Oct 25, 2025</td>
+              <td><span class="stat-change up">Updated</span></td>
+              <td>0917-234-5678</td>
+            </tr>
+            <tr>
+              <td>Watsons Iloilo</td>
+              <td>Oct 22, 2025</td>
+              <td><span class="stat-change down">Low Stock</span></td>
+              <td>0908-123-4567</td>
+            </tr>
+            <tr>
+              <td>Rose Pharmacy</td>
+              <td>Oct 20, 2025</td>
+              <td><span class="stat-change up">Stable</span></td>
+              <td>0999-765-4321</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <!-- ✅ FOOTER -->
+  <footer>
+    <p>© 2025 All Rights Reserved | Health360</p>
+  </footer>
+
+  <script src="admin.js"></script>
+</body>
+</html>

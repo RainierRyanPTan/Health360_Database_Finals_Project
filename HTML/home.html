@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health360 | Home</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+
+  <!-- ✅ NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h2>Health360</h2>
+      <p>📍 Iloilo Site</p>
+    </div>
+
+    <div class="nav-links">
+      <a href="home.html" class="active">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="notifications.html">Notifications</a>
+      <a href="medicine.html">Medicine</a>
+      <a href="cart.html">🛒 Cart</a>
+      <a href="index.html" class="logout">Logout</a>
+    </div>
+  </nav>
+
+  <!-- ✅ MAIN APP CONTAINER -->
+  <div class="app">
+
+    <!-- 🌤 GREETING + USER SNAPSHOT -->
+    <section class="welcome-section">
+      <div class="welcome-text">
+        <h2>Good Day, <span id="userName">Stephen Curry</span> 👋</h2>
+        <p>Stay healthy and on track with your daily meds and goals.</p>
+      </div>
+      <div class="welcome-img">
+        <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" alt="User Avatar">
+      </div>
+    </section>
+
+    <!-- 💊 TODAY'S MEDICINE REMINDER -->
+    <section class="reminder-section">
+      <h3>💊 Today's Reminders</h3>
+      <div class="reminder-card">
+        <p><strong>8:00 AM</strong> — Take <span>Atorvastatin (1 tablet)</span></p>
+        <p><strong>1:00 PM</strong> — Take <span>Vitamin C (500mg)</span></p>
+        <p><strong>9:00 PM</strong> — Take <span>Metformin (1 tablet)</span></p>
+        <button id="markTaken">Mark as Taken ✅</button>
+      </div>
+    </section>
+
+    <!-- 🏥 NEARBY PHARMACIES -->
+    <section class="pharmacy-section">
+      <h3>🏥 Nearby Pharmacies</h3>
+      <div class="pharmacy-grid">
+        <div class="pharmacy-card">
+          <h4>Mercury Drug</h4>
+          <p>✔ Open • 1.2 km away</p>
+          <button>View Stock</button>
+        </div>
+        <div class="pharmacy-card">
+          <h4>Watsons Pharmacy</h4>
+          <p>✔ Open • 1.8 km away</p>
+          <button>View Stock</button>
+        </div>
+        <div class="pharmacy-card">
+          <h4>Generika</h4>
+          <p>⚠ Closes Soon • 2.0 km away</p>
+          <button>View Stock</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 💡 HEALTH TIPS -->
+    <section class="tips-section">
+      <h3>💡 Health & Wellness Tips</h3>
+      <div class="tips-grid">
+        <div class="tip">
+          <h4>Stay Hydrated 💧</h4>
+          <p>Drink at least 8 glasses of water every day to help your body function well.</p>
+        </div>
+        <div class="tip">
+          <h4>Regular Checkups 🩺</h4>
+          <p>Visit your doctor regularly to monitor your health and medications.</p>
+        </div>
+        <div class="tip">
+          <h4>Balanced Diet 🥗</h4>
+          <p>Include vegetables, fruits, and protein in your diet for a stronger immune system.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🎁 PROMOTIONS -->
+    <section class="promo-section">
+      <h3>🎁 Active Promotions</h3>
+      <div class="promo-grid">
+        <div class="promo-card">
+          <span class="tag">15% OFF</span>
+          <p>Flat discount on your first order!</p>
+          <button>Shop Now</button>
+        </div>
+        <div class="promo-card">
+          <span class="tag">Buy 1 Get 1</span>
+          <p>Exclusive vitamins promo this week.</p>
+          <button>View Deal</button>
+        </div>
+        <div class="promo-card">
+          <span class="tag">20% Cashback</span>
+          <p>Earn cashback credits every weekend!</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ✅ FOOTER -->
+  <footer>
+    <p>© 2025 All Rights Reserved | Health360</p>
+  </footer>
+
+  <script src="home.js"></script>
+</body>
+</html>

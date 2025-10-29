@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manage Medicines | Health360</title>
+  <link rel="stylesheet" href="pharmacy_manage.css" />
+</head>
+<body>
+  <!-- ✅ HEADER -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h2>Health360</h2>
+      <p>📍 Iloilo Site</p>
+    </div>
+    <div class="nav-links">
+      <a href="pharmacy.html">🏠 Dashboard</a>
+      <a href="index.html" class="logout">Logout</a>
+    </div>
+  </nav>
+
+  <!-- ✅ MAIN CONTENT -->
+  <div class="manage-container">
+    <header>
+      <h2>🧾 Manage Medicines</h2>
+      <p>Add, edit, or remove medicines in your pharmacy’s database.</p>
+    </header>
+
+    <!-- Add Medicine Button -->
+    <button class="add-btn" id="openAddModal">➕ Add Medicine</button>
+
+    <!-- Medicine Table -->
+    <section class="medicine-table">
+      <table id="medicineTable">
+        <thead>
+          <tr>
+            <th>Medicine ID</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#MED-1001</td>
+            <td>Paracetamol</td>
+            <td>Pain Reliever</td>
+            <td>₱10.00</td>
+            <td>250</td>
+            <td>
+              <button class="edit-btn">✏️ Edit</button>
+              <button class="delete-btn">🗑️ Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>#MED-1002</td>
+            <td>Amoxicillin</td>
+            <td>Antibiotic</td>
+            <td>₱25.00</td>
+            <td>150</td>
+            <td>
+              <button class="edit-btn">✏️ Edit</button>
+              <button class="delete-btn">🗑️ Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <!-- ✅ MODAL FOR ADDING MEDICINE -->
+  <div class="modal" id="addModal">
+    <div class="modal-content">
+      <h3>➕ Add New Medicine</h3>
+      <form id="addMedicineForm">
+        <label for="medName">Medicine Name:</label>
+        <input type="text" id="medName" placeholder="Enter medicine name" required />
+
+        <label for="medCategory">Category:</label>
+        <input type="text" id="medCategory" placeholder="Enter category" required />
+
+        <label for="medPrice">Price (₱):</label>
+        <input type="number" id="medPrice" placeholder="Enter price" required />
+
+        <label for="medStock">Stock Quantity:</label>
+        <input type="number" id="medStock" placeholder="Enter stock count" required />
+
+        <div class="modal-buttons">
+          <button type="submit" class="save-btn">💾 Save</button>
+          <button type="button" id="closeModal" class="cancel-btn">❌ Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ✅ FOOTER -->
+  <footer>
+    <p>© 2025 All Rights Reserved | Health360</p>
+  </footer>
+
+  <script src="pharmacy_manage.js"></script>
+</body>
+</html>

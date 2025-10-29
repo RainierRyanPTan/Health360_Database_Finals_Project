@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pharmacy Dashboard | Health360</title>
+  <link rel="stylesheet" href="pharmacy_dashboard.css" />
+</head>
+<body>
+
+  <!-- ✅ HEADER -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h2>Health360</h2>
+      <p>📍 Iloilo Site</p>
+    </div>
+    <div class="nav-right">
+      <button class="logout-btn">Logout</button>
+    </div>
+  </nav>
+
+  <!-- ✅ DASHBOARD STRUCTURE -->
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <h3>Pharmacy Panel</h3>
+      <ul>
+        <li><a href="pharmacy_dashboard.html" class="active">🏠 Dashboard</a></li>
+        <li><a href="pharmacy_inventory.html">💊 Inventory</a></li>
+        <li><a href="pharmacy_orders.html">🚚 Orders</a></li>
+        <li><a href="pharmacy_lowstock.html">⚠️ Low Stock</a></li>
+        <li><a href="pharmacy_reports.html">📊 Reports</a></li>
+        <li><a href="pharmacy_manage.html">📝 Manage Data</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h1>🏥 Pharmacy Dashboard</h1>
+        <p>Monitor operations, view stock levels, and manage pharmacy tasks.</p>
+      </header>
+
+      <section class="stats">
+        <div class="stat-card"><h3>Total Medicines</h3><p>540</p></div>
+        <div class="stat-card"><h3>Low Stock</h3><p>12</p></div>
+        <div class="stat-card"><h3>Pending Orders</h3><p>7</p></div>
+        <div class="stat-card"><h3>Sales (Oct)</h3><p>₱47,850</p></div>
+      </section>
+
+      <section class="overview">
+        <h2>Quick Actions</h2>
+        <div class="overview-grid">
+          <div class="card"><h4>💊 Inventory</h4><p>View and update medicine quantities.</p><a href="pharmacy_inventory.html"><button>Open</button></a></div>
+          <div class="card"><h4>🚚 Orders</h4><p>Check deliveries and supply requests.</p><a href="pharmacy_orders.html"><button>Open</button></a></div>
+          <div class="card"><h4>⚠️ Low Stock</h4><p>See items that need restocking.</p><a href="pharmacy_lowstock.html"><button>Open</button></a></div>
+          <div class="card"><h4>📊 Reports</h4><p>Send daily and monthly reports.</p><a href="pharmacy_reports.html"><button>Open</button></a></div>
+          <div class="card"><h4>📝 Manage Data</h4><p>Add, edit, or remove medicines.</p><a href="pharmacy_manage.html"><button>Open</button></a></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- ✅ FOOTER -->
+  <footer>
+    <p>© 2025 All Rights Reserved | Health360</p>
+  </footer>
+
+  <script src="pharmacy_dashboard.js"></script>
+</body>
+</html>

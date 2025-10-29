@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Users | Health360</title>
+  <link rel="stylesheet" href="manage_users.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h2>Health360</h2>
+      <p>📍 Iloilo Site</p>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="logout">Logout</a>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTAINER -->
+  <div class="admin-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Health360</h2>
+        <p>Admin Panel</p>
+      </div>
+      <ul class="sidebar-menu">
+        <li><a href="admin.html">🏠 Dashboard</a></li>
+        <li class="active"><a href="manage_users.html">🧑‍⚕️ Manage Users</a></li>
+        <li><a href="pharmacies.html">🏥 Pharmacies</a></li>
+        <li><a href="medicine_stocks.html">💊 Medicine Stocks</a></li>
+        <li><a href="reports.html">📈 Reports</a></li>
+        <li><a href="settings.html">⚙️ Settings</a></li>
+      </ul>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="dashboard-main">
+      <header class="admin-header">
+        <h1>Manage Users 👥</h1>
+        <p>View, add, and manage all registered Health360 users.</p>
+      </header>
+
+      <!-- ACTION BUTTONS -->
+      <div class="controls">
+        <div class="control-row">
+          <button id="addUserBtn" class="btn">➕ Add User</button>
+          <select id="userFilter">
+            <option value="all">All Roles</option>
+            <option value="user">User</option>
+            <option value="pharmacy">Pharmacy Staff</option>
+            <option value="admin">Admin</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- USERS TABLE -->
+      <section class="table-section">
+        <table id="userTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Role</th>
+              <th>Email</th>
+              <th>Contact</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Stephen Curry</td>
+              <td><span class="stat-badge badge-user">User</span></td>
+              <td>stephen.curry@health360.com</td>
+              <td>0917-123-4567</td>
+              <td>
+                <button class="btn outline edit-btn">Edit</button>
+                <button class="btn remove-btn">Remove</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Maria Cruz</td>
+              <td><span class="stat-badge badge-pharmacist">Pharmacy Staff</span></td>
+              <td>maria.cruz@health360.com</td>
+              <td>0918-765-4321</td>
+              <td>
+                <button class="btn outline edit-btn">Edit</button>
+                <button class="btn remove-btn">Remove</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Admin John</td>
+              <td><span class="stat-badge badge-admin">Admin</span></td>
+              <td>admin.john@health360.com</td>
+              <td>0922-112-3344</td>
+              <td>
+                <button class="btn outline edit-btn">Edit</button>
+                <button class="btn remove-btn">Remove</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 All Rights Reserved | Health360</p>
+  </footer>
+
+  <script src="manage_users.js"></script>
+</body>
+</html>

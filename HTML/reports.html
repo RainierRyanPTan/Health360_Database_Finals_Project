@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports | Health360 Admin</title>
+  <link rel="stylesheet" href="reports.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h2>Health360</h2>
+      <p>📍 Iloilo Site</p>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="logout">Logout</a>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <div class="admin-container">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Health360</h2>
+        <p>Admin Panel</p>
+      </div>
+      <ul class="sidebar-menu">
+        <li><a href="admin.html">🏠 Dashboard</a></li>
+        <li><a href="manage_users.html">🧑‍⚕️ Manage Users</a></li>
+        <li><a href="pharmacies.html">🏥 Pharmacies</a></li>
+        <li><a href="medicine_stocks.html">💊 Medicine Stocks</a></li>
+        <li class="active"><a href="reports.html">📈 Reports</a></li>
+        <li><a href="settings.html">⚙️ Settings</a></li>
+      </ul>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="dashboard-main">
+      <header class="admin-header">
+        <h1>Reports 📊</h1>
+        <p>Visualize medicine sales and pharmacy performance.</p>
+      </header>
+
+      <!-- CHARTS SECTION -->
+      <section class="charts">
+        <div class="chart-card">
+          <h3>Monthly Sales</h3>
+          <canvas id="salesChart"></canvas>
+        </div>
+        <div class="chart-card">
+          <h3>Medicine Category Distribution</h3>
+          <canvas id="categoryChart"></canvas>
+        </div>
+      </section>
+
+      <!-- TABLE -->
+      <section class="table-section">
+        <h3>Summary Report</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Pharmacy</th>
+              <th>Medicines Sold</th>
+              <th>Total Revenue</th>
+              <th>Low Stock Items</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mercury Drug</td>
+              <td>1,200</td>
+              <td>₱185,000</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>Watsons</td>
+              <td>980</td>
+              <td>₱142,500</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>Rose Pharmacy</td>
+              <td>750</td>
+              <td>₱110,200</td>
+              <td>4</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 All Rights Reserved | Health360</p>
+  </footer>
+
+  <script src="reports.js"></script>
+</body>
+</html>

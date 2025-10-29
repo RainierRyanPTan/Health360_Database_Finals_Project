@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Low Stock Alerts | Health360</title>
+  <link rel="stylesheet" href="pharmacy_lowstock.css" />
+</head>
+<body>
+
+  <!-- ✅ HEADER -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h2>Health360</h2>
+      <p>📍 Iloilo Site</p>
+    </div>
+    <div class="nav-links">
+      <a href="pharmacy.html">🏠 Dashboard</a>
+      <a href="index.html" class="logout">Logout</a>
+    </div>
+  </nav>
+
+  <!-- ✅ LOW STOCK DASHBOARD -->
+  <div class="lowstock-container">
+    <header>
+      <h2>⚠️ Low Stock Alerts</h2>
+      <p>These medicines need immediate restocking to maintain supply.</p>
+    </header>
+
+    <!-- Search Filter -->
+    <div class="lowstock-actions">
+      <input type="text" id="searchLowStock" placeholder="🔍 Search medicine..." />
+      <button id="restockSelectedBtn">🔄 Mark as Restocked</button>
+    </div>
+
+    <!-- Low Stock Table -->
+    <table id="lowStockTable">
+      <thead>
+        <tr>
+          <th><input type="checkbox" id="selectAll"></th>
+          <th>Medicine Name</th>
+          <th>Category</th>
+          <th>Remaining Stock</th>
+          <th>Minimum Required</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-stock="15">
+          <td><input type="checkbox" class="row-check"></td>
+          <td>Paracetamol</td>
+          <td>Analgesic</td>
+          <td>15</td>
+          <td>50</td>
+          <td><span class="status low">Low Stock</span></td>
+          <td><button class="refill-btn">Request Refill</button></td>
+        </tr>
+        <tr data-stock="20">
+          <td><input type="checkbox" class="row-check"></td>
+          <td>Amoxicillin</td>
+          <td>Antibiotic</td>
+          <td>20</td>
+          <td>60</td>
+          <td><span class="status critical">Critical</span></td>
+          <td><button class="refill-btn">Request Refill</button></td>
+        </tr>
+        <tr data-stock="30">
+          <td><input type="checkbox" class="row-check"></td>
+          <td>Vitamin C</td>
+          <td>Supplement</td>
+          <td>30</td>
+          <td>100</td>
+          <td><span class="status low">Low Stock</span></td>
+          <td><button class="refill-btn">Request Refill</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ✅ FOOTER -->
+  <footer>
+    <p>© 2025 All Rights Reserved | Health360</p>
+  </footer>
+
+  <script src="pharmacy_lowstock.js"></script>
+</body>
+</html>

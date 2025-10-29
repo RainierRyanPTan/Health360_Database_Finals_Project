@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health360 | Notifications</title>
+  <link rel="stylesheet" href="notifications.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h2>Health360</h2>
+      <p>📍 Iloilo Site</p>
+    </div>
+
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="notifications.html" class="active">Notifications</a>
+      <a href="medicine.html">Medicine</a>
+      <a href="cart.html">🛒 Cart</a>
+      <a href="index.html" class="logout">Logout</a>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="app">
+    <div class="header-row">
+      <h2>🔔 Notifications</h2>
+      <button id="clearAll">🗑 Clear All</button>
+    </div>
+
+    <div class="notifications-list">
+      <div class="notification unread">
+        <p>💊 Your order for Paracetamol has been shipped.</p>
+        <span class="time">Today, 9:00 AM</span>
+      </div>
+      <div class="notification unread">
+        <p>🛒 Your cart has items expiring soon.</p>
+        <span class="time">Yesterday, 6:30 PM</span>
+      </div>
+      <div class="notification">
+        <p>📢 New promotion: 15% off on protein shakes!</p>
+        <span class="time">2 days ago, 12:00 PM</span>
+      </div>
+      <div class="notification">
+        <p>💉 COVID-19 test kits are back in stock.</p>
+        <span class="time">3 days ago, 4:15 PM</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 All Rights Reserved | Health360</p>
+  </footer>
+
+  <script src="notifications.js"></script>
+</body>
+</html>

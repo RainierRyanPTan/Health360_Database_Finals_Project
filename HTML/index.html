@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health360 | Login</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body class="login-body">
+  <div class="login-container">
+    <h1>Health360</h1>
+    <p class="subtitle">Your Health. Your Control.</p>
+
+    <form id="loginForm" class="login-form">
+      <select id="roleSelect" required>
+        <option value="" disabled selected hidden>Select Role</option>
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+        <option value="pharmacy">Pharmacy Staff</option>
+      </select>
+
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="password" id="password" placeholder="Password" required />
+
+    <a href="home.html"><button>Login</button></a>
+    </form>
+
+    <p class="footer-text">© 2025 Health360 | All Rights Reserved</p>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

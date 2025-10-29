@@ -1,0 +1,136 @@
+/* === GENERAL === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f7f9fc;
+  color: #333;
+  margin: 0;
+}
+
+/* === NAVBAR (same as home.css) === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0077b6;
+  color: white;
+  padding: 10px 30px;
+}
+
+.nav-left h2 { margin: 0; }
+.nav-left p { margin: 0; font-size: 0.8em; }
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #caf0f8;
+  text-decoration: underline;
+}
+
+.logout {
+  background: #e63946;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* === PROFILE SECTION === */
+.profile-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-container h1 {
+  color: #0077b6;
+  margin-bottom: 20px;
+}
+
+.profile-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 18px rgba(0, 0, 0, 0.07);
+  text-align: left;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-header img.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid #0077b6;
+}
+
+.user-id {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 15px 0;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+.section h3 {
+  color: #0077b6;
+  margin-bottom: 10px;
+}
+
+.info-grid p {
+  margin: 6px 0;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  background: #0077b6;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0096c7;
+}
+
+.save {
+  background: #4caf50;
+}
+
+.hidden {
+  display: none;
+}
+
+/* === FOOTER (same as pharmacy + home) === */
+footer {
+  text-align: center;
+  background: #023e8a;
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
+}

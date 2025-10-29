@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health360 | Profile</title>
+  <link rel="stylesheet" href="profile.css" />
+</head>
+<body>
+
+  <!-- ✅ HEADER -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h2>Health360</h2>
+      <p>📍 Iloilo Site</p>
+    </div>
+
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="profile.html" class="active">Profile</a>
+      <a href="notifications.html">Notifications</a>
+      <a href="medicine.html">Medicine</a>
+      <a href="cart.html">🛒 Cart</a>
+      <a href="index.html" class="logout">Logout</a>
+    </div>
+  </nav>
+
+  <!-- ✅ PROFILE BODY -->
+  <main class="profile-container">
+    <h1>👤 User Profile</h1>
+
+    <div class="profile-card">
+      <div class="profile-header">
+        <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" alt="User Avatar" class="avatar" />
+        <div>
+          <h2 id="userName">Stephen Curry</h2>
+          <p class="user-id">User ID: 12-12515</p>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <section class="section">
+        <h3>Personal Information</h3>
+        <div class="info-grid">
+          <p><strong>Email:</strong> <span id="email">stephcurry@gmail.com</span></p>
+          <p><strong>Phone:</strong> <span id="phone">+63901234567</span></p>
+          <p><strong>Address:</strong> <span id="address">La Paz, Iloilo City</span></p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>Medical Information</h3>
+        <div class="info-grid">
+          <p><strong>Blood Type:</strong> <span id="blood">O+</span></p>
+          <p><strong>Height:</strong> <span id="height">170 cm</span></p>
+          <p><strong>Weight:</strong> <span id="weight">65 kg</span></p>
+          <p><strong>Maintenance Medicine:</strong> <span id="meds">Atorvastatin</span></p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>Emergency Contact</h3>
+        <div class="info-grid">
+          <p><strong>Name:</strong> <span id="emergencyName">Rodelyn-Lebanan</span></p>
+          <p><strong>Phone:</strong> <span id="emergencyPhone">+63987654321</span></p>
+        </div>
+      </section>
+
+      <div class="button-group">
+        <button id="editProfile">✏️ Edit Profile</button>
+        <button id="saveProfile" class="save hidden">💾 Save</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- ✅ FOOTER -->
+  <footer>
+    <p>© 2025 All Rights Reserved | Health360</p>
+  </footer>
+
+  <script src="profile.js"></script>
+</body>
+</html>

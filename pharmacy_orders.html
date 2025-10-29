@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pharmacy Orders | Health360</title>
+  <link rel="stylesheet" href="pharmacy_orders.css" />
+</head>
+<body>
+
+  <!-- ✅ HEADER -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h2>Health360</h2>
+      <p>📍 Iloilo Site</p>
+    </div>
+    <div class="nav-links">
+      <a href="pharmacy.html">🏠 Dashboard</a>
+      <a href="index.html" class="logout">Logout</a>
+    </div>
+  </nav>
+
+  <!-- ✅ ORDERS DASHBOARD -->
+  <div class="orders-container">
+    <header>
+      <h2>🚚 Orders Management</h2>
+      <p>View and process delivery and purchase requests from users.</p>
+    </header>
+
+    <!-- Search and Filter -->
+    <div class="orders-actions">
+      <input type="text" id="searchOrders" placeholder="🔍 Search by Customer Name..." />
+      <select id="statusFilter">
+        <option value="all">All</option>
+        <option value="Pending">Pending</option>
+        <option value="Approved">Approved</option>
+        <option value="Delivered">Delivered</option>
+      </select>
+    </div>
+
+    <!-- Orders Table -->
+    <table id="ordersTable">
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Customer</th>
+          <th>Medicine</th>
+          <th>Quantity</th>
+          <th>Date</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-status="Pending">
+          <td>#ORD1024</td>
+          <td>Stephen Curry</td>
+          <td>Paracetamol</td>
+          <td>2</td>
+          <td>2025-10-30</td>
+          <td><span class="status pending">Pending</span></td>
+          <td>
+            <button class="approve-btn">Approve</button>
+            <button class="reject-btn">Reject</button>
+          </td>
+        </tr>
+        <tr data-status="Approved">
+          <td>#ORD1025</td>
+          <td>Mary Santos</td>
+          <td>Amoxicillin</td>
+          <td>1</td>
+          <td>2025-10-29</td>
+          <td><span class="status approved">Approved</span></td>
+          <td>
+            <button class="deliver-btn">Mark Delivered</button>
+          </td>
+        </tr>
+        <tr data-status="Delivered">
+          <td>#ORD1026</td>
+          <td>John Cruz</td>
+          <td>Vitamin C</td>
+          <td>3</td>
+          <td>2025-10-28</td>
+          <td><span class="status delivered">Delivered</span></td>
+          <td><button class="view-btn">View</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ✅ FOOTER -->
+  <footer>
+    <p>© 2025 All Rights Reserved | Health360</p>
+  </footer>
+
+  <script src="pharmacy_orders.js"></script>
+</body>
+</html>

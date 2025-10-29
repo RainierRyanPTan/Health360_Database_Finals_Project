@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health360 | Cart</title>
+  <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+
+  <!-- ✅ HEADER -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h2>Health360</h2>
+      <p>📍 Iloilo Site</p>
+    </div>
+
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="notifications.html">Notifications</a>
+      <a href="medicine.html">Medicine</a>
+      <a href="cart.html" class="active">🛒 Cart</a>
+      <a href="index.html" class="logout">Logout</a>
+    </div>
+  </nav>
+
+  <!-- ✅ CART CONTENT -->
+  <div class="app">
+    <h2>🛒 Your Shopping Cart</h2>
+    <p class="desc">Manage your items before checking out, Stephen Curry.</p>
+
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="cartBody">
+        <tr>
+          <td>Paracetamol</td>
+          <td>₱25.00</td>
+          <td>2</td>
+          <td>₱50.00</td>
+          <td><button class="remove-btn">Remove</button></td>
+        </tr>
+        <tr>
+          <td>Hand Sanitizer</td>
+          <td>₱60.00</td>
+          <td>1</td>
+          <td>₱60.00</td>
+          <td><button class="remove-btn">Remove</button></td>
+        </tr>
+        <tr>
+          <td>Ensure Powder</td>
+          <td>₱92.00</td>
+          <td>1</td>
+          <td>₱92.00</td>
+          <td><button class="remove-btn">Remove</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="cart-total"><strong>Total: ₱202.00</strong></p>
+
+    <div class="cart-actions">
+      <button class="clear-btn">🗑 Clear Cart</button>
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <!-- ✅ FOOTER -->
+  <footer>
+    <p>© 2025 All Rights Reserved | Health360</p>
+  </footer>
+
+  <script src="cart.js"></script>
+</body>
+</html>

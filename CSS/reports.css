@@ -1,0 +1,176 @@
+/* ===== GENERAL ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f7f9fc;
+  margin: 0;
+  color: #333;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0077b6;
+  color: white;
+  padding: 10px 30px;
+}
+
+.nav-left h2 {
+  margin: 0;
+}
+
+.nav-left p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #caf0f8;
+  text-decoration: underline;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.admin-container {
+  display: flex;
+  min-height: 80vh;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 220px;
+  background: #023e8a;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar-header h2 {
+  margin: 0;
+}
+
+.sidebar-header p {
+  font-size: 0.9em;
+  margin: 5px 0 20px;
+}
+
+/* ✅ Remove list bullets and spacing */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu a {
+  display: block;
+  padding: 10px 8px;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.sidebar-menu a.active,
+.sidebar-menu a:hover {
+  background: #0077b6;
+  color: white;
+}
+
+/* ===== MAIN CONTENT ===== */
+.dashboard-main {
+  flex: 1;
+  padding: 20px;
+}
+
+.admin-header h1 {
+  margin: 0;
+}
+
+.admin-header p {
+  color: #555;
+  margin-top: 5px;
+}
+
+/* ===== CHARTS SECTION ===== */
+.charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.chart-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chart-card h3 {
+  margin-top: 0;
+  color: #0077b6;
+}
+
+/* ===== TABLE SECTION ===== */
+.table-section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.table-section h3 {
+  color: #0077b6;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.table-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-section th,
+.table-section td {
+  padding: 10px;
+  border-bottom: 1px solid #f0f4f8;
+  text-align: left;
+}
+
+.table-section thead {
+  background: #f6f9fc;
+  font-weight: 600;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  background: #023e8a;
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .admin-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    order: 2;
+  }
+
+  .dashboard-main {
+    order: 1;
+    padding: 12px;
+  }
+}

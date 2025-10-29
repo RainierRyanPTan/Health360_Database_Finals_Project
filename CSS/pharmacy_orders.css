@@ -1,0 +1,172 @@
+/* ===== GENERAL ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f7f9fc;
+  margin: 0;
+  color: #333;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0077b6;
+  color: white;
+  padding: 12px 30px;
+}
+
+.nav-left h2 { margin: 0; }
+.nav-left p { margin: 0; font-size: 0.8em; }
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #caf0f8;
+}
+
+.logout {
+  background: #ff4b5c;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+/* ===== ORDERS CONTAINER ===== */
+.orders-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.orders-container header h2 {
+  color: #0077b6;
+  margin-bottom: 8px;
+}
+
+.orders-actions {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.orders-actions input,
+.orders-actions select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.orders-actions input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.orders-actions select {
+  background: white;
+  cursor: pointer;
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+thead {
+  background: #0077b6;
+  color: white;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+/* ===== STATUS TAGS ===== */
+.status {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.status.pending {
+  background: #ffeb99;
+  color: #b38b00;
+}
+
+.status.approved {
+  background: #c2f0c2;
+  color: #1e7e34;
+}
+
+.status.delivered {
+  background: #b3e5fc;
+  color: #0277bd;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.approve-btn {
+  background: #0077b6;
+  color: white;
+}
+.approve-btn:hover { background: #0096c7; }
+
+.reject-btn {
+  background: #e63946;
+  color: white;
+}
+.reject-btn:hover { background: #f15b5b; }
+
+.deliver-btn {
+  background: #2ecc71;
+  color: white;
+}
+.deliver-btn:hover { background: #27ae60; }
+
+.view-btn {
+  background: #00b4d8;
+  color: white;
+}
+.view-btn:hover { background: #0077b6; }
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  background: #023e8a;
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .orders-actions {
+    flex-direction: column;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+}

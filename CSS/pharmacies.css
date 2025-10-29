@@ -1,0 +1,139 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f7f9fc;
+  color: #333;
+  margin: 0;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0077b6;
+  color: white;
+  padding: 10px 30px;
+}
+.nav-left h2 { margin: 0; }
+.nav-left p { margin: 0; font-size: 0.8em; }
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+.nav-links a:hover { color: #caf0f8; text-decoration: underline; }
+
+.admin-container {
+  display: flex;
+  min-height: 80vh;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 220px;
+  background: #023e8a;
+  color: white;
+  padding: 20px;
+}
+.sidebar-header h2 { margin: 0; }
+.sidebar-header p { margin: 5px 0 20px; font-size: 0.9em; }
+.sidebar-menu { list-style: none; padding: 0; }
+.sidebar-menu a {
+  display: block;
+  padding: 10px 8px;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.sidebar-menu a:hover,
+.sidebar-menu a.active {
+  background: #0077b6;
+  color: white;
+}
+
+/* ===== MAIN CONTENT ===== */
+.dashboard-main {
+  flex: 1;
+  padding: 20px;
+}
+.admin-header h1 { margin: 0; }
+.admin-header p { color: #555; margin-top: 5px; }
+
+.controls {
+  margin: 20px 0;
+}
+.control-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.btn {
+  background: #0077b6;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover { background: #0096c7; }
+.btn.outline {
+  background: transparent;
+  color: #0077b6;
+  border: 1px solid #0077b6;
+}
+.btn.outline:hover { background: #0077b6; color: white; }
+.remove-btn {
+  background: #e63946;
+}
+.remove-btn:hover {
+  background: #ff6b6b;
+}
+
+/* ===== TABLE ===== */
+.table-section table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.table-section th, .table-section td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #f0f4f8;
+  text-align: left;
+}
+.table-section thead th {
+  background: #f6f9fc;
+  font-weight: 600;
+  color: #223;
+}
+
+/* ===== STOCK STATUS ===== */
+.stock-status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  color: white;
+}
+.stock-status.low { background: #e63946; }
+.stock-status.normal { background: #38b000; }
+.low-stock { background: #fff5f5; }
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  background: #023e8a;
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .admin-container { flex-direction: column; }
+  .sidebar { width: 100%; order: 2; }
+  .dashboard-main { order: 1; padding: 12px; }
+}

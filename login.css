@@ -1,0 +1,127 @@
+
+/* ======================================
+   Health360 Login Page Styles
+   ====================================== */
+
+:root {
+  --primary: #0078d7;
+  --primary-dark: #005ea2;
+  --light-bg: #f5f8fa;
+  --white: #ffffff;
+  --text: #222;
+  --gray: #777;
+  --danger: #ff3b30;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-body {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  background-color: var(--white);
+  padding: 40px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.login-container h1 {
+  color: var(--primary-dark);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: var(--gray);
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs and select share same look */
+.login-form select,
+.login-form input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  color: var(--text);
+  background-color: #fff;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Placeholder style for select */
+.login-form select:invalid {
+  color: #999; /* light gray text when no option chosen */
+}
+
+/* Real text color once selected */
+.login-form select option {
+  color: var(--text);
+}
+
+/* Focus effects */
+.login-form select:focus,
+.login-form input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 5px rgba(0, 120, 215, 0.4);
+}
+
+.login-form button {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-form button:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.footer-text {
+  margin-top: 25px;
+  color: var(--gray);
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-container {
+    margin: 20px;
+    padding: 30px;
+  }
+
+  .login-container h1 {
+    font-size: 1.7rem;
+  }
+}
